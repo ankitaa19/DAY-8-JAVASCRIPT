@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API</title>
+</head>
+<body>
+    <script>
+        async function getData() {
+            try {
+                const response = await fetch("http://127.0.0.1:5501/1.html");
+                const jsonData = await response.json();
+                alert(jsonData);
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        async function postData() {
+            try {
+                // Your POST request logic here
+                alert("Data Updated");
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        async function putData() {
+            try {
+                // Your PUT request logic here
+                alert("Data Updated");
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        async function deleteData() {
+            try {
+                // Your DELETE request logic here
+                alert("Data Deleted");
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+    </script>
+
+    <input type="button" onclick="getData()" value="GET">
+    <br><br>
+    <input type="button" onclick="postData()" value="POST">
+    <br><br>
+    <input type="button" onclick="putData()" value="PUT">
+    <br><br>
+    <input type="button" onclick="deleteData()" value="DELETE">
+    <br><br>
+</body>
+</html>

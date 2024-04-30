@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun1(){
+            document.cookie="fname=ANKITAAA, expires=Thu 2024 05 02 May 2024 11:00:00 UTC; "
+            alert(document.cookie.length)
+            document.getElementById("d1"). innerHTML=document.cookie;
+            
+        }
+    </script>
+    <input type="button" onclick="fun1()" value="display cookie">
+    <div id="d1"></div>
+    
+</body>
+</html>
